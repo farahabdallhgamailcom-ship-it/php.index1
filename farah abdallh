@@ -1,0 +1,80 @@
+### دوال الوقت والتاريخ في PHP — قائمة شاملة منظمة
+
+فيما يلي قائمة منظمة ومفصلة بدوال التعامل مع التاريخ والوقت في PHP، مقسمة حسب النوع (دوال إجرائية، دوال متعلقة بالمناطق الزمنية، دوال شمسية، دوال الفواصل الزمنية والكائنات DateTime). هذه القائمة تغطي الدوال الأساسية والمرادفات الشائعة كما وردت في مرجع PHP الرسمي.
+
+---
+
+### دوال إجرائية أساسية
+- **time**  
+- **date**  
+- **gmdate**  
+- **mktime**  
+- **gmmktime**  
+- **strtotime**  
+- **microtime**  
+- **getdate**  
+- **localtime**  
+- **idate**  
+- **checkdate**  
+- **strftime**  
+- **gmstrftime**  
+- **strptime**  
+- **date_default_timezone_get**  
+- **date_default_timezone_set**.  
+
+---
+
+### دوال تحليل وتنسيق التاريخ والوقت
+- **date_parse**  
+- **date_parse_from_format**  
+- **date_format** (دالة مغلفة لكائنات DateTime)  
+- **date** (لتنسيق الطابع الزمني)  
+- **date_get_last_errors**.  
+
+---
+
+### دوال إنشاء وتعديل كائنات DateTime و DateTimeImmutable
+- **date_create** / **DateTime::__construct**  
+- **date_create_from_format** / **DateTime::createFromFormat**  
+- **date_create_immutable** / **DateTimeImmutable::__construct**  
+- **date_create_immutable_from_format** / **DateTimeImmutable::createFromFormat**  
+- **date_modify** / **DateTime::modify**  
+- **date_add** / **DateTime::add**  
+- **date_sub** / **DateTime::sub**  
+- **date_diff** / **DateTime::diff**  
+- **date_date_set** / **DateTime::setDate**  
+- **date_offset_get** / **DateTime::getOffset**.  
+
+---
+
+### دوال DateInterval و DatePeriod
+- **date_interval_create_from_date_string** / **DateInterval::createFromDateString**  
+- **date_interval_format** / **DateInterval::format**  
+- **DatePeriod** (بناء واستخدام كائنات الفترات الزمنية عبر الكلاس).  
+
+---
+
+### دوال المناطق الزمنية Timezone
+- **timezone_open** / **timezone_name_from_abbr**  
+- **timezone_name_get** (من كائن DateTimeZone)  
+- **timezone_offset_get** / **timezone_transitions_get**  
+- **timezone_location_get**  
+- **timezone_identifiers_list**  
+- **timezone_abbreviations_list**  
+- **timezone_version_get**.  
+
+---
+
+### دوال شمسية (sunrise / sunset)
+- **date_sunrise**  
+- **date_sunset**  
+- **date_sun_info**.  
+
+---
+
+### دوال متعلقة بالطوابع الزمنية والـ Unix timestamps
+- **strtotime**  
+- **mktime** / **gmmktime**  
+- **time**  
+- **microtime**.  
+
